@@ -1,0 +1,8 @@
+.flexmain{
+    display: flex;
+    justify-content: center;  
+}
+h1{
+   text-align: center; 
+   padding-bottom: 40px;
+}

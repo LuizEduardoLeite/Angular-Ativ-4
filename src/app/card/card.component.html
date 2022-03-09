@@ -1,0 +1,18 @@
+<div class="flex">
+    <mat-card class="mat"
+    [style]="'height: ' + tamanho + '
+    ; color: '+cor+'
+    ;background-color:'+fundo+';'">
+        
+        <p> {{ title }} </p>
+        <p>{{ price }}</p>
+        <p class="fx">{{ conteudo1 }}</p>
+        <p class="fx">{{ conteudo2 }}</p>
+        <p class="fx">{{ conteudo3 }}</p>
+        <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="emitir()">Learn More</button>
+        </mat-card-actions>
+    </mat-card>
+    
+</div>
+
