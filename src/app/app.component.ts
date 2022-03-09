@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import  { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  alerta1(){
-    alert('Você selecionou o plano Básico')
+  
+  
+  constructor(private snackBar: MatSnackBar) {}
+
+  openSnackBar1() {
+    this.snackBar.open('Voce escolheu o plano Básico','fechar');
   }
-  alerta2(){
-    alert('Você selecionou o plano Profissional')
+  openSnackBar2() {
+    this.snackBar.open('Voce escolheu o plano Profissional','fechar');
   }
-  alerta3(){
-    alert('Você selecionou o plano Mestre')
+  openSnackBar3() {
+    this.snackBar.open('Voce escolheu o plano Mestre','fechar');
   }
+  
 }
