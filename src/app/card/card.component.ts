@@ -1,6 +1,5 @@
 import { Component,Input,Output, EventEmitter } from '@angular/core';
 
-
 @Component({
   selector: 'card',
   templateUrl: './card.component.html',
@@ -23,13 +22,9 @@ export class CardComponent  {
   cor = ''
   @Input()
   tamanho=''
-  
-  
   @Output()
   clicou:EventEmitter<any> = new EventEmitter<any>()
   emitir():void{
     this.clicou.emit()
   }
-
-
 }
